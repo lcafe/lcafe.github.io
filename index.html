@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Ferreira | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Mono&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body data-theme="dark">
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="profile-image">
+            <img
+              src="https://github.com/lcafe.png"
+              alt="Perfil"
+              id="github-avatar"
+            />
+          </div>
+          <h1 class="name">Lucas Ferreira</h1>
+          <p class="title">Estudante de Computação</p>
+
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <ul>
+            <li class="active">
+              <a href="pages/about.html" data-target="content-frame"
+                ><i class="fas fa-user"></i> Sobre Mim</a
+              >
+            </li>
+            <li>
+              <a href="pages/projects.html" data-target="content-frame"
+                ><i class="fas fa-code"></i> Projetos</a
+              >
+            </li>
+            <!--<li><a href="pages/study_notes/index.html" data-target="content-frame"><i class="fas fa-book"></i> Study Notes</a></li>
+                    !-->
+            <li>
+              <a href="https://github.com/lcafe" target="_blank"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <footer class="sidebar-footer">
+          &copy; 2025 | Todos os direitos reservados
+        </footer>
+      </aside>
+
+      <main class="content">
+        <iframe
+          id="content-frame"
+          name="content-frame"
+          src="pages/about.html"
+          frameborder="0"
+          title="Conteúdo da página"
+        ></iframe>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
